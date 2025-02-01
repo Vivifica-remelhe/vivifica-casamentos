@@ -1,0 +1,134 @@
+/* @theme gradient */
+/* Author: rnd195 https://github.com/rnd195/ */
+/* MIT license https://github.com/rnd195/my-marp-themes/blob/live/licenses/LICENSE */
+
+@import "default";
+@import url('https: //fonts.googleapis.com/css2?family=Alice&family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  background-color: #ffffff;
+  background-image: radial-gradient(farthest-corner at bottom right, #ffd34e, transparent 70%), radial-gradient(farthest-corner at bottom right, #ffd34e, transparent 40%), radial-gradient(farthest-corner at bottom left, #32b0ab, transparent 70%), radial-gradient(farthest-corner at bottom left, #32b0ab, transparent 70%);
+  background-size: 100% 20%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+section.cover {
+  background-color: #ffffff;
+  background-image: radial-gradient(farthest-corner at bottom right, #ffd34e, transparent 70%), radial-gradient(farthest-corner at bottom right, #ffd34e, transparent 40%), radial-gradient(farthest-corner at bottom left, #32b0ab, transparent 70%), radial-gradient(farthest-corner at bottom left, #32b0ab, transparent 70%);
+  background-size: 100% 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+section.cover h1 {
+  color: #ffffff;
+}
+
+section.indice {
+  ol li::marker {
+    color: #32b0ab;
+    font-weight: 500;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #32b0ab;
+}
+
+li {
+  color: #32b0ab;
+}
+
+a {
+  color: #282828;
+}
+
+code {
+  background-color: #ffffffad;
+}
+
+mark {
+  background-color: #eaa2ee;
+  padding: 0 2px 2px;
+}
+
+pre {
+  background-color: #ffffffad;
+}
+
+/* https://github.com/yhatt/marp/issues/263 */
+section::after {
+  font-size: 0.75em;
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+}
+
+/* the "center" keyword centers the image - may break, careful */
+/* https://github.com/marp-team/marpit/issues/141#issuecomment-473204518 */
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+
+section>footer,
+section>header {
+  color: #ffffff;
+}
+
+section>footer::before {
+  content: url('logo.svg');
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  /* invert image */
+  filter: invert(1);
+  /* Adjust the width as needed */
+  height: auto;
+}
+
+
+
+/* || SECTION CLASS: blue */
+section.blue {
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom right, #cadaf7 5%, #87a7e4 95%);
+}
+
+section.blue>h1,
+section.blue>h2,
+section.blue>h3,
+section.blue>h4,
+section.blue>h5,
+section.blue>h6 {
+  color: #214484;
+}
+
+section.blue>a {
+  color: #303ca6;
+}
+
+section.blue::after,
+section.blue>footer,
+section.blue>header {
+  color: #303ca6;
+}
+
+/* || SECTION CLASS: tinytext */
+/* new class that makes p, ul, and blockquote text smaller */
+/* might be useful for the References slide, use <!-- _class: tinytext --> */
+section.tinytext>p,
+section.tinytext>ul,
+section.tinytext>blockquote {
+  font-size: 0.65em;
+}
