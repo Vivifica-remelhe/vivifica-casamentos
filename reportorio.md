@@ -22,7 +22,7 @@ style: |
 <!-- footer: <div style="text-align: right"> </div> --->
 <!-- _class: indice --> 
 
-# Indice
+# Índice
 <div class="columns" style="font-size: 1.2em; column-count: 2;">
   <ol>
     <li><a href="#entrada-noivo--noiva">Entrada Noivo / Noiva</a></li>
