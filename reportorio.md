@@ -69,6 +69,7 @@ style: |
 - [Aleluia (Karen Lafferty)](https://www.vivifica.pt/letra/777)
 - [Aleluia - D. Couceiro](https://vivifica.pt/letra/5)
 <audio controls src="M%C3%BAsicas%20-%20Casamentos/Aleluia%20%5BD.%20Couceiro%5D.m4a" style="width:100%; height:32px; margin:2px 0;"></audio>
+- [Aleluia - Jose M. Correa](https://www.vivifica.pt/letra/1332)
 
 ---
 # Consentimento
